@@ -15,12 +15,22 @@
       </svg>
       <span class="ml-3 text-xl">Tailblocks</span>
     </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+    <!-- Hamburger Menu Button (visible on small screens) -->
+    <button id="menu-toggle" class="md:hidden ml-auto text-gray-600 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Nav Menu -->
+    <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0 md:ml-auto items-center text-base justify-center">
       <a class="mr-5 hover:text-gray-900">First Link</a>
       <a class="mr-5 hover:text-gray-900">Second Link</a>
       <a class="mr-5 hover:text-gray-900">Third Link</a>
       <a class="mr-5 hover:text-gray-900">Fourth Link</a>
     </nav>
+
     <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1 primary-btn" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -28,6 +38,7 @@
     </button>
   </div>
 </header>
+
 
 <section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -107,5 +118,8 @@
     </span>
   </div>
 </footer>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
